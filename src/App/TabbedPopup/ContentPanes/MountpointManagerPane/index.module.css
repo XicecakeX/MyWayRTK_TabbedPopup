@@ -1,0 +1,16 @@
+.content{
+  margin: 20px auto 0 auto;
+  text-align: left;
+  width: 60%;
+}
+
+.selectField{
+  margin-left: 30px;
+  padding: 3px;
+}
+
+.title{
+  color: #00334D;
+  display: inline;
+  font-weight: bold;
+}
