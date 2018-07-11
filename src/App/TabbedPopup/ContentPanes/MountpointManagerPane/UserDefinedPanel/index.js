@@ -8,7 +8,7 @@ export default class UserDefinedPanel extends React.Component{
     return(
       <div>
         <div className = {S.legend}> User Defined Mountpoints</div>
-        <table width = "100%" className = {S.content}>
+        <table align = "center" width = "60%" className = {S.content}>
           <tbody>
             <CustomMountpoint id = "A" style = {S.item}/>
             <CustomMountpoint id = "B"/>

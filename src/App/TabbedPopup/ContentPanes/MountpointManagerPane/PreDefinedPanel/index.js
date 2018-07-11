@@ -7,7 +7,7 @@ export default class PreDefinedPanel extends React.Component{
     return(
       <div>
         <div className = {S.legend}> Pre-Defined Mountpoints</div>
-        <table width = "100%" className = {S.content}>
+        <table align = "center" width = "60%" className = {S.content}>
           <tbody>
             <tr className = {S.item}>
               <td className = {S.title}> MYWAYRTK_GLONASS:</td>
