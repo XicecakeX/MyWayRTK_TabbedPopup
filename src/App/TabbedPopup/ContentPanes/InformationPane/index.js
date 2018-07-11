@@ -18,7 +18,7 @@ export default class InformationPane extends React.Component{
   /**Rendering Component*/
   render(){
     return(
-      <table width = "100%" className = {S.content}>
+      <table align = "center" width = "60%" className = {S.content}>
         <tbody>
           <tr className = {S.item}>
             <td className = {S.title}> Address:</td>
