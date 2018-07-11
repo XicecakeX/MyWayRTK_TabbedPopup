@@ -1,6 +1,6 @@
 import React from 'react';
 import S from './index.module.css';
-import CustomMountpoint from '../../../../Resources/MiscComponents/CustomMountpoint';
+import CustomMountpoint from './CustomMountpoint';
 
 export default class UserDefinedPanel extends React.Component{
   /**Rendering Component*/
