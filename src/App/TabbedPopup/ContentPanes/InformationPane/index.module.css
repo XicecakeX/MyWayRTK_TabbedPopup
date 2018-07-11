@@ -1,0 +1,28 @@
+.item{
+  background-color: lightgray;
+}
+
+.title{
+  font-weight: bold;
+  padding: 5px;
+  text-align: right;
+  width: 300px;
+}
+
+.data{
+  padding: 5px;
+  text-align: left;
+}
+
+.content{
+  border: 2px solid #00334D;
+  border-collapse: collapse;
+}
+
+.display{
+  display: inline;
+}
+
+.hidden{
+  display: none;
+}

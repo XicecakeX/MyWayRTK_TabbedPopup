@@ -1,0 +1,45 @@
+.bottom{
+  border-bottom: #00334D solid 2px;
+  border-left: #00334D solid 1px;
+  border-right: #00334D solid 1px;
+  border-top: #00334D solid 1px;
+  height: 20px;
+  padding: 5px;
+}
+
+.cell{
+  border: 1px solid #00334D;
+  height: 20px;
+  padding: 5px;
+}
+
+.content{
+  border-left: #00334D solid 2px;
+  border-collapse: collapse;
+  font-size: 10pt;
+  text-align: left;
+}
+
+.content .button{
+  background-color: white;
+  border-width: 0;
+}
+
+.content .end{
+  border-right: #00334D solid 2px;
+}
+
+.content th{
+  border: 1px solid #00334D;
+  height: 20px;
+  padding: 5px;
+
+}
+.content .top{
+  border-top: #00334D solid 2px;
+  width: 135px;
+}
+
+.item{
+  background-color: lightgray;
+}

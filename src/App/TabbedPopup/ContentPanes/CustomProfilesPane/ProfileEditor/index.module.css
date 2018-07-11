@@ -1,0 +1,14 @@
+.cell{
+  border: 1px solid #00334D;
+  height: 20px;
+  padding: 5px;
+  width: 144px;
+}
+
+.display{
+  visibility: visible;
+}
+
+.hidden{
+  visibility: hidden;
+}

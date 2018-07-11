@@ -1,0 +1,29 @@
+.tabBar{
+  border-collapse: separate;
+}
+
+.tabBar td{
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border: 1px solid black;
+  width: 25%;
+  padding: 5px 0 5px 0;
+  font-size: 18px;
+}
+
+.default{
+  background-color: #FFFFFF;
+}
+
+.default:hover{
+  color: white;
+  background-color: #F78F1E;
+  cursor: pointer;
+}
+
+.selected{
+  font-weight: bold;
+  color: #F78F1E;
+  background-color: #00334D;
+  text-decoration: none;
+}

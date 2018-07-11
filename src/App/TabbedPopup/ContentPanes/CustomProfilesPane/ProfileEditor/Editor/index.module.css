@@ -1,0 +1,64 @@
+.button{
+  width: 82px;
+  height: 26px;
+  margin: 8px 4px 0 4px;
+  padding: 3px;
+}
+
+.content{
+  width: 370px;
+  margin: 0 auto 0 auto;
+}
+
+.data{
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px rgba(246, 246, 246, 0.7);
+  padding: 10px;
+  text-align: center;
+}
+
+.display{
+  visibility: visible;
+}
+
+.errorMessage{
+  color: red;
+  font-weight: bold;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.input{
+  padding-bottom: 5px;
+}
+
+.item{
+  text-align: left;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.popup{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 99%;
+  width: 100%;
+  z-index: 6;
+  background-color: rgba(0, 0, 0, 0.45);
+  padding-top: 80px;
+}
+
+.textfield{
+  padding: 3px;
+}
+
+.title{
+  float: left;
+  padding: 5px;
+  width: 140px;
+}

@@ -1,0 +1,24 @@
+.title{
+  width: 300px;
+  padding: 5px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.data{
+  padding: 5px;
+  text-align: left;
+}
+
+.display{
+  display: inline;
+}
+
+.hidden{
+  display: none;
+}
+
+.textfield{
+  padding: 1px 0;
+  width: 300px;
+}

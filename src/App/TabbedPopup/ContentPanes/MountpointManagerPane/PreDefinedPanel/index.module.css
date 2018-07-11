@@ -1,0 +1,26 @@
+.item{
+  background-color: lightgray;
+}
+
+.title{
+  width: 300px;
+  padding: 5px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.data{
+  padding: 5px;
+  text-align: left;
+}
+
+.content{
+  border-collapse: collapse;
+  border: 2px solid #00334D;
+}
+
+.legend{
+  color: #00334D;
+  font-weight: bold;
+  text-align: left;
+}
