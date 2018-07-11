@@ -8,10 +8,10 @@ export default class App extends React.Component{
   constructor(){
     super();
     this.state = {
-      visibility: "display"
+      visibility: "hidden"
     }
   }
-  
+
   /**Rendering Webpage*/
   render(){
     return(

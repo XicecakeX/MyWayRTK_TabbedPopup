@@ -14,9 +14,9 @@ export default class TabbedPopup extends React.Component{
     super();
     this.state = {
       selected: {
-        tab1: "default",
+        tab1: "selected",
         tab2: "default",
-        tab3: "selected",
+        tab3: "default",
         tab4: "default"
       }
     }
