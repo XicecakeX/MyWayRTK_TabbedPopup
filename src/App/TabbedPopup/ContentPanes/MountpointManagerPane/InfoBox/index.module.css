@@ -1,0 +1,56 @@
+.button{
+  width: 82px;
+  height: 26px;
+  margin: 0 4px;
+  padding: 3px;
+}
+
+.button:hover{
+  cursor: pointer;
+  color: #00334D;
+  background-color: #F78F1E;
+}
+
+.content{
+  width: 600px;
+  margin: 0 auto 0 auto;
+}
+
+.data{
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px rgba(246, 246, 246, 0.7);
+  padding: 20px;
+  text-align: center;
+}
+
+.display{
+  visibility: visible;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.info{
+  font-size: 12pt;
+  margin: 30px 0;
+  text-align: left;
+}
+
+.popup{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 99%;
+  width: 100%;
+  z-index: 6;
+  background-color: rgba(0, 0, 0, 0.45);
+  padding-top: 80px;
+}
+
+.title{
+  color: #00334D;
+  font-weight: bold;
+}
