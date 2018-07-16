@@ -1,14 +1,14 @@
 import React from 'react';
 import S from './index.module.css';
 import TabbedPopup from './TabbedPopup';
-import Button from './Button';
+import PopupButton from './PopupButton';
 
 export default class App extends React.Component{
   /**Default Constructor*/
   constructor(){
     super();
     this.state = {
-      visibility: "hidden"
+      visibility: "display"
     }
   }
 
@@ -17,7 +17,7 @@ export default class App extends React.Component{
     return(
       <div className = {S.center}>
         <TabbedPopup visibility = {this.state.visibility} close = {() => {this.setState({visibility: "hidden"})}}/>
-        <Button handleClick = {() => {this.setState({visibility: "display"})}}/>
+        <PopupButton handleClick = {() => {this.setState({visibility: "display"})}}/>
       </div>
     );
   }

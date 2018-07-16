@@ -1,0 +1,15 @@
+.legend{
+  color: #00334D;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.search{
+  display: flex;
+}
+
+.selectField{
+  border: 1px solid #00334D;
+  height: 240px;
+  width: 100%;
+}

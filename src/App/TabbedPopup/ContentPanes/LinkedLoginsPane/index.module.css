@@ -1,0 +1,44 @@
+.addRemoveButtons{
+  display: flex;
+}
+
+.checkbox{
+  display: flex;
+  margin-top: 5px;
+}
+
+.content{
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.contentCenter{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.contentSide{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.linkButtons{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.title{
+  color: #00334D;
+  font-weight: bold;
+}
+
+.view{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}

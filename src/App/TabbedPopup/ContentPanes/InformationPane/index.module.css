@@ -1,5 +1,10 @@
-.item{
+.item1{
   background-color: lightgray;
+  display: flex;
+}
+
+.item2{
+  display: flex;
 }
 
 .title{
@@ -16,7 +21,10 @@
 
 .content{
   border: 2px solid #00334D;
-  border-collapse: collapse;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 60%;
 }
 
 .display{

@@ -1,12 +1,14 @@
 .tabBar{
-  border-collapse: separate;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
 }
 
-.tabBar td{
+.tabBar div{
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   border: 1px solid black;
-  width: 25%;
+  width: 100%;
   padding: 5px 0 5px 0;
   font-size: 18px;
 }

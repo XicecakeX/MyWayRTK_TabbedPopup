@@ -14,7 +14,8 @@ export default class TabMenu extends React.Component{
         tab1: "selected",
         tab2: "default",
         tab3: "default",
-        tab4: "default"
+        tab4: "default",
+        tab5: "default"
       };
     }else if(id === 2){
       //Setting data
@@ -22,7 +23,8 @@ export default class TabMenu extends React.Component{
         tab1: "default",
         tab2: "selected",
         tab3: "default",
-        tab4: "default"
+        tab4: "default",
+        tab5: "default"
       };
     }else if(id === 3){
       //Setting data
@@ -30,7 +32,17 @@ export default class TabMenu extends React.Component{
         tab1: "default",
         tab2: "default",
         tab3: "selected",
-        tab4: "default"
+        tab4: "default",
+        tab5: "default"
+      };
+    }else if(id === 4){
+      //Setting data
+      selected = {
+        tab1: "default",
+        tab2: "default",
+        tab3: "default",
+        tab4: "selected",
+        tab5: "default"
       };
     }else{
       //Setting data
@@ -38,7 +50,8 @@ export default class TabMenu extends React.Component{
         tab1: "default",
         tab2: "default",
         tab3: "default",
-        tab4: "selected"
+        tab4: "default",
+        tab5: "selected"
       };
     }
 
@@ -49,19 +62,13 @@ export default class TabMenu extends React.Component{
   /**Rendering Component*/
   render(){
     return(
-      <table width = "100%"
-        cellPadding = "0px"
-        cellSpacing = "0px"
-        className = {S.tabBar}>
-        <tbody>
-          <tr>
-            <td className = {S[this.props.selected.tab1]} onClick = {() => {this.selectTab(1)}}> Information</td>
-            <td className = {S[this.props.selected.tab2]} onClick = {() => {this.selectTab(2)}}> Mountpoint Manager</td>
-            <td className = {S[this.props.selected.tab3]} onClick = {() => {this.selectTab(3)}}> Custom Profiles</td>
-            <td className = {S[this.props.selected.tab4]} onClick = {() => {this.selectTab(4)}}> Status</td>
-          </tr>
-        </tbody>
-      </table>
+      <div className = {S.tabBar}>
+        <div className = {S[this.props.selected.tab1]} onClick = {() => {this.selectTab(1)}}> Information</div>
+        <div className = {S[this.props.selected.tab2]} onClick = {() => {this.selectTab(2)}}> Mountpoint Manager</div>
+        <div className = {S[this.props.selected.tab3]} onClick = {() => {this.selectTab(3)}}> Custom Profiles</div>
+        <div className = {S[this.props.selected.tab4]} onClick = {() => {this.selectTab(4)}}> Status</div>
+        <div className = {S[this.props.selected.tab5]} onClick = {() => {this.selectTab(5)}}> Linked Logins</div>
+      </div>
     );
   }
 }

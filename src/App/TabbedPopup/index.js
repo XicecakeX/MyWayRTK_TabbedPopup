@@ -6,6 +6,7 @@ import InformationPane from './ContentPanes/InformationPane';
 import MountpointManagerPane from './ContentPanes/MountpointManagerPane';
 import CustomProfilesPane from './ContentPanes/CustomProfilesPane';
 import StatusPane from './ContentPanes/StatusPane';
+import LinkedLoginsPane from './ContentPanes/LinkedLoginsPane';
 import CloseButton from './CloseButton';
 
 export default class TabbedPopup extends React.Component{
@@ -14,10 +15,11 @@ export default class TabbedPopup extends React.Component{
     super();
     this.state = {
       selected: {
-        tab1: "selected",
+        tab1: "default",
         tab2: "default",
         tab3: "default",
-        tab4: "default"
+        tab4: "default",
+        tab5: "selected"
       }
     }
   }
@@ -38,9 +40,12 @@ export default class TabbedPopup extends React.Component{
     }else if(tabs.tab3 === "selected"){
       //Setting data
       data = (<CustomProfilesPane />);
-    }else{
+    }else if(tabs.tab4 === "selected"){
       //Setting data
       data = (<StatusPane />);
+    }else{
+      //Setting data
+      data = (<LinkedLoginsPane />);
     }
 
     //Returning data
@@ -58,7 +63,8 @@ export default class TabbedPopup extends React.Component{
         tab1: "selected",
         tab2: "default",
         tab3: "default",
-        tab4: "default"
+        tab4: "default",
+        tab5: "default"
       }
     });
   }

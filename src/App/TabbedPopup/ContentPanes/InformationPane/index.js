@@ -5,7 +5,7 @@ import SaveButton from './InputComponents/SaveButton';
 import ESNText from './InputComponents/ESNTextfield';
 
 export default class InformationPane extends React.Component{
-  /**Default Constructor*/
+  /**Default Consdivuctor*/
   constructor(){
     super();
     this.state = {
@@ -18,61 +18,59 @@ export default class InformationPane extends React.Component{
   /**Rendering Component*/
   render(){
     return(
-      <table align = "center" width = "60%" className = {S.content}>
-        <tbody>
-          <tr className = {S.item}>
-            <td className = {S.title}> Address:</td>
-            <td className = {S.data}> </td>
-          </tr>
-          <tr>
-            <td className = {S.title}> Phone:</td>
-            <td className = {S.data}> </td>
-          </tr>
-          <tr className = {S.item}>
-            <td className = {S.title}> Reseller:</td>
-            <td className = {S.data}> </td>
-          </tr>
-          <tr>
-            <td className = {S.title}> Last Login Time:</td>
-            <td className = {S.data}> </td>
-          </tr>
-          <tr className = {S.item}>
-            <td className = {S.title}> User Agent:</td>
-            <td className = {S.data}> </td>
-          </tr>
-          <tr>
-            <td className = {S.title}> ESN:</td>
-            <td className = {S.data}>
-              <div className = {S[this.state.display1]}> {this.state.ESN}</div>
-              <EditButton style = {S[this.state.display1]} handleClick = {() => {this.setState({display1: "hidden", display2: "display"})}}/>
-              <ESNText value = {this.state.ESN}
-                style = {S[this.state.display2]}
-                setInput = {(value) => {this.setState({ESN: value})}}/>
-              <SaveButton style = {S[this.state.display2]} handleClick = {() => {this.setState({display1: "display", display2: "hidden"})}}/>
-            </td>
-          </tr>
-          <tr className = {S.item}>
-            <td className = {S.title}> Last GPGGA:</td>
-            <td className = {S.data}> </td>
-          </tr>
-          <tr>
-            <td className = {S.title}> Last GPGGA Time:</td>
-            <td className = {S.data}> </td>
-          </tr>
-          <tr className = {S.item}>
-            <td className = {S.title}> Last/Current Mountpoint Connected:</td>
-            <td className = {S.data}> </td>
-          </tr>
-          <tr>
-            <td className = {S.title}> Latitude:</td>
-            <td className = {S.data}> </td>
-          </tr>
-          <tr className = {S.item}>
-            <td className = {S.title}> Longitude:</td>
-            <td className = {S.data}> </td>
-          </tr>
-        </tbody>
-      </table>
+      <div className = {S.content}>
+        <div className = {S.item1}>
+          <div className = {S.title}> Address:</div>
+          <div className = {S.data}> </div>
+        </div>
+        <div className = {S.item2}>
+          <div className = {S.title}> Phone:</div>
+          <div className = {S.data}> </div>
+        </div>
+        <div className = {S.item1}>
+          <div className = {S.title}> Reseller:</div>
+          <div className = {S.data}> </div>
+        </div>
+        <div className = {S.item2}>
+          <div className = {S.title}> Last Login Time:</div>
+          <div className = {S.data}> </div>
+        </div>
+        <div className = {S.item1}>
+          <div className = {S.title}> User Agent:</div>
+          <div className = {S.data}> </div>
+        </div>
+        <div className = {S.item2}>
+          <div className = {S.title}> ESN:</div>
+          <div className = {S.data}>
+            <div className = {S[this.state.display1]}> {this.state.ESN}</div>
+            <EditButton style = {S[this.state.display1]} handleClick = {() => {this.setState({display1: "hidden", display2: "display"})}}/>
+            <ESNText value = {this.state.ESN}
+              style = {S[this.state.display2]}
+              setInput = {(value) => {this.setState({ESN: value})}}/>
+            <SaveButton style = {S[this.state.display2]} handleClick = {() => {this.setState({display1: "display", display2: "hidden"})}}/>
+          </div>
+        </div>
+        <div className = {S.item1}>
+          <div className = {S.title}> Last GPGGA:</div>
+          <div className = {S.data}> </div>
+        </div>
+        <div className = {S.item2}>
+          <div className = {S.title}> Last GPGGA Time:</div>
+          <div className = {S.data}> </div>
+        </div>
+        <div className = {S.item1}>
+          <div className = {S.title}> Last/Current Mountpoint Connected:</div>
+          <div className = {S.data}> </div>
+        </div>
+        <div className = {S.item2}>
+          <div className = {S.title}> Latitude:</div>
+          <div className = {S.data}> </div>
+        </div>
+        <div className = {S.item1}>
+          <div className = {S.title}> Longitude:</div>
+          <div className = {S.data}> </div>
+        </div>
+      </div>
     );
   }
 }

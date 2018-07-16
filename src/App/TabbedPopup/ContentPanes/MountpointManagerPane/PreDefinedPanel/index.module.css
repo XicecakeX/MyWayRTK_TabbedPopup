@@ -1,5 +1,10 @@
-.item{
+.item1{
   background-color: lightgray;
+  display: flex;
+}
+
+.item2{
+  display: flex;
 }
 
 .title{
@@ -15,8 +20,11 @@
 }
 
 .content{
-  border-collapse: collapse;
   border: 2px solid #00334D;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 60%;
 }
 
 .legend{
