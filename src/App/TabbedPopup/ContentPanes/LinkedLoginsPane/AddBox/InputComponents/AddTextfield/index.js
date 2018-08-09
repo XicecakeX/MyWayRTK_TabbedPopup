@@ -1,5 +1,6 @@
 import React from 'react';
 import S from './index.module.css';
+import ClassNames from 'classnames';
 
 export default class AddTextfield extends React.Component{
   /**Rendering Component*/
@@ -7,7 +8,7 @@ export default class AddTextfield extends React.Component{
     return(
       <input type = "text"
         value = {this.props.value}
-        className = {S.textfield}
+        className = {ClassNames(S[this.props.style], S.textfield)}
         id = "txtAdd"
         onChange = {(event) => {this.props.setInput(event.target.value)}}/>
     );

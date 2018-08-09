@@ -87,10 +87,15 @@ export default class AvailableLinkSelect extends React.Component{
     }
   }
 
+  test = () => {
+    console.log(this.props.value);
+  }
+
   /**Rendering Component*/
   render(){
     return(
       <div>
+        {this.test()}
         <div className = {S.legend}> Available To Link</div>
         <select value = {this.props.value}
           className = {S.selectField}

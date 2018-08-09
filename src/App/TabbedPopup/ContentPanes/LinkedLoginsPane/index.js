@@ -9,6 +9,7 @@ import InvalidCheckbox from './InputComponents/InvalidCheckbox';
 import AddButton from './InputComponents/AddButton';
 import DeleteButton from './InputComponents/DeleteButton';
 import AddBox from './AddBox';
+import DeleteConfirmBox from './DeleteConfirmBox';
 import List from './list';
 
 export default class LinkedLoginsPane extends React.Component{
@@ -16,13 +17,14 @@ export default class LinkedLoginsPane extends React.Component{
   constructor(){
     super();
     this.state = {
-      available: List[0],
+      available: List[0].id,
       availableList: List,
       linkedTo: "",
       linkedToList: [],
       linked: false,
       invalid: false,
-      display: "hidden"
+      displayAddBox: "hidden",
+      displayDeleteBox: "hidden"
     };
   }
 
@@ -52,9 +54,18 @@ export default class LinkedLoginsPane extends React.Component{
             </div>
           </div>
           <div className = {S.addRemoveButtons}>
-            <AddButton handleClick = {() => {this.setState({display: "display"})}}/>
-            <AddBox visibility = {this.state.display} close = {() => {this.setState({display: "hidden"})}}/>
-            <DeleteButton handleClick = {this.deleteLink}/>
+            <AddButton handleClick = {() => {this.setState({displayAddBox: "display"})}}/>
+            <AddBox visibility = {this.state.displayAddBox}
+              addLink = {(item, list) => {this.setState({available: item, availableList: list})}}
+              list = {List}
+              item = {this.state.available}
+              close = {() => {this.setState({displayAddBox: "hidden"})}}/>
+            <DeleteButton handleClick = {() => {this.setState({displayDeleteBox: "display"})}}/>
+            <DeleteConfirmBox visibility = {this.state.displayDeleteBox}
+              deleteLink = {(item, list) => {this.setState({available: item, availableList: list})}}
+              list = {List}
+              item = {this.state.available}
+              close = {() => {this.setState({displayDeleteBox: "hidden"})}}/>
           </div>
         </div>
         <div className = {S.contentSide}>
